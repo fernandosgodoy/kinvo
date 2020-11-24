@@ -1,6 +1,6 @@
 # kinvo
 
-<p align="center"><a href="https://fsdeveloper.com.br" target="_blank"><img src="http://www.fsdeveloper.com.br/wp-content/uploads/2020/10/fsdeveloper-logo.png"></a></p>
+<p align="center"><a href="https://kinvo.com.br" target="_blank"><img src="https://www.kinvo.com.br/images/logo--light.svg"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
