@@ -3,8 +3,8 @@
 <p align="center"><a href="https://kinvo.com.br" target="_blank"><img src="https://www.kinvo.com.br/images/logo--light.svg"></a></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="#"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="#"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
 [Portuguese Version]
