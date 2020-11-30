@@ -9,7 +9,10 @@ namespace Kinvo.Domain.Entities
     public class BaseEntity
     {
 
-        public BaseEntity() { }
+        public BaseEntity()
+        {
+            DataCriacao = DateTime.Now;
+        }
 
         public int Id { get; set; }
         public DateTime DataCriacao { get; set; }

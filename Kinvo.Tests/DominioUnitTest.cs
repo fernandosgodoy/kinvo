@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using Kinvo.Domain.Entities;
+using Kinvo.Domain.Enumerators;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Kinvo.Tests
@@ -9,15 +12,35 @@ namespace Kinvo.Tests
         [TestMethod]
         public void TesteNoDominioParaValidarDados()
         {
+            var produtos = new List<Produto>();
 
-            var produtoNome = "Ações BBDC4";
-            var categoria = 1;
-            var instituicao = "XP Investimentos";
-            var ativo = "BBDC4";
-            var quantidade = 100;
-            var precoCompra = 23.90;
-            var dataInicio = DateTime.Now;
-            var taxaCorretagem = 0;
+            //Ações
+            var acoesBradesco = new Produto()
+            {
+                Nome = "Ações BBDC4",
+                CategoriaProduto = CategoriaProduto.Acoes,
+                Instituicao = "XP Investimentos",
+                AtivoSigla = "BBDC4",
+                Qtde = 100,
+                PrecoCompra = (Decimal)23.90,
+                DataInicio = DateTime.Now,
+                TaxaCorretagem = 0
+            };
+            produtos.Add(acoesBradesco);
+
+            //FIIs
+            var fiiMaxiRenda = new Produto()
+            {
+                Nome = "FII MXRF11",
+                CategoriaProduto = CategoriaProduto.FundosImobiliarios,
+                Instituicao = "Modal",
+                AtivoSigla = "MXRF11",
+                Qtde = 50,
+                PrecoCompra = (Decimal)10.54,
+                DataInicio = DateTime.Now,
+                TaxaCorretagem = 0
+            };
+            produtos.Add(fiiMaxiRenda);
 
         }
     }
