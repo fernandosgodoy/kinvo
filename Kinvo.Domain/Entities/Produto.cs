@@ -12,7 +12,7 @@ namespace Kinvo.Domain.Entities
     {
 
         public string Nome { get; set; }
-        public CategoriaAtivo CategoriaAtivo { get; set; }
+        public CategoriaProduto CategoriaProduto { get; set; }
 
     }
 }
