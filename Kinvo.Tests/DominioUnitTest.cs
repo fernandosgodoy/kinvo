@@ -42,6 +42,20 @@ namespace Kinvo.Tests
             };
             produtos.Add(fiiMaxiRenda);
 
+            //Renda Fixa Pre
+            var rendaFixaPre = new Produto()
+            {
+                Nome = "RENDA FIXA PRE",
+                CategoriaProduto = CategoriaProduto.RendaFixaPre,
+                Instituicao = "Rico",
+                Qtde = 5,
+                PrecoCompra = (Decimal)1000,
+                TaxaAnual = (Decimal)5.5,
+                DataInicio = DateTime.Now,
+                TaxaCorretagem = 0
+            };
+            produtos.Add(fiiMaxiRenda);
+
         }
     }
 }
