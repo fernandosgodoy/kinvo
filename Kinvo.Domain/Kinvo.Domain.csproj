@@ -44,10 +44,12 @@
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Produto.cs" />
     <Compile Include="Enumerators\CategoriaProduto.cs" />
+    <Compile Include="Interfaces\Repositories\IProdutoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepository.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
