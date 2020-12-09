@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
+using Kinvo.Infra.Data.Mappings;
 
 namespace Kinvo.Infra.Data.Context
 {
@@ -72,7 +73,7 @@ namespace Kinvo.Infra.Data.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            //modelBuilder.ApplyConfiguration(new ProdutoMap());
+            modelBuilder.ApplyConfiguration(new ProdutoMap());
 
         }
     }
