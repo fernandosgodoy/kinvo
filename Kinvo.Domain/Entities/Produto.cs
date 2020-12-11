@@ -18,7 +18,7 @@ namespace Kinvo.Domain.Entities
         public string Instituicao { get; set; }
         public decimal PrecoCompra { get; set; }
         public DateTime DataInicio { get; set; }
-        public decimal TaxaCorretagem { get; set; }
+        public decimal? TaxaCorretagem { get; set; }
         public decimal? TaxaAnual { get; set; }
 
     }
