@@ -14,6 +14,10 @@ namespace Kinvo.Domain.Services
     {
 
         protected readonly IRepository<TEntity> _repository;
+        public ServiceBase(IRepository<TEntity> repositorio)
+        {
+            this._repository = repositorio;
+        }
 
         public TEntity Find(int id)
         {

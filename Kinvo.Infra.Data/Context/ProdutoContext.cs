@@ -15,7 +15,8 @@ namespace Kinvo.Infra.Data.Context
         public ProdutoContext(DbContextOptions<ProdutoContext> options)
             : base(options)
         {
-            Database.EnsureCreated();
+            if (Database.GetPendingMigrations().Count() > 0)
+                Database.Migrate();
         }
 
         // DbSets
