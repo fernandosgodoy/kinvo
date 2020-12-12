@@ -15,7 +15,7 @@ namespace Kinvo.Infra.Data.Context
         public ProdutoContext(DbContextOptions<ProdutoContext> options)
             : base(options)
         {
-            //Database.EnsureCreated();
+            Database.EnsureCreated();
         }
 
         // DbSets
