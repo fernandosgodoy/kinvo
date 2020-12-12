@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Kinvo.Domain\Kinvo.Domain.csproj" />
     <ProjectReference Include="..\Kinvo.Infra.Data\Kinvo.Infra.Data.csproj" />
+    <ProjectReference Include="..\Kinvo.Infra.IoC\Kinvo.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

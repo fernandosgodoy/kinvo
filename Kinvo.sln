@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Tests", "Kinvo.Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Domain", "Kinvo.Domain\Kinvo.Domain.csproj", "{61506150-0EAE-4752-AF4C-68E3FFF16028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Infra.Data", "Kinvo.Infra.Data\Kinvo.Infra.Data.csproj", "{2ED363F4-398D-4974-A5BD-A56B5F88DD24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinvo.Infra.Data", "Kinvo.Infra.Data\Kinvo.Infra.Data.csproj", "{2ED363F4-398D-4974-A5BD-A56B5F88DD24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Infra.IoC", "Kinvo.Infra.IoC\Kinvo.Infra.IoC.csproj", "{A556CD61-3BF1-45BD-889D-C42A3719A449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2ED363F4-398D-4974-A5BD-A56B5F88DD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ED363F4-398D-4974-A5BD-A56B5F88DD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ED363F4-398D-4974-A5BD-A56B5F88DD24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A556CD61-3BF1-45BD-889D-C42A3719A449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A556CD61-3BF1-45BD-889D-C42A3719A449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A556CD61-3BF1-45BD-889D-C42A3719A449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A556CD61-3BF1-45BD-889D-C42A3719A449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
