@@ -1,16 +1,21 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Kinvo.Infra.Data.Context;
+using Kinvo.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Kinvo.Application;
+//using Microsoft.Extensions.Hosting;
 
 namespace Kinvo.Api
 {
@@ -29,6 +34,8 @@ namespace Kinvo.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<ProdutoContext>(options =>
                 options.UseSqlServer("DefaultConnection"));
+            InjectorDependencies.Register(services);
+            services.AddAutoMapper(x => x.AddProfile(new MappingEntities()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
