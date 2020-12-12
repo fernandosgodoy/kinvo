@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Kinvo.Application\Kinvo.Application.csproj" />
     <ProjectReference Include="..\Kinvo.Domain\Kinvo.Domain.csproj" />
     <ProjectReference Include="..\Kinvo.Infra.Data\Kinvo.Infra.Data.csproj" />
     <ProjectReference Include="..\Kinvo.Infra.IoC\Kinvo.Infra.IoC.csproj" />

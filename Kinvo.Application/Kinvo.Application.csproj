@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kinvo.Application\Kinvo.Application.csproj" />
     <ProjectReference Include="..\Kinvo.Domain\Kinvo.Domain.csproj" />
     <ProjectReference Include="..\Kinvo.Infra.Data\Kinvo.Infra.Data.csproj" />
   </ItemGroup>
