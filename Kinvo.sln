@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1300
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinvo.Api", "Kinvo.Api\Kinvo.Api.csproj", "{BDA414F5-920A-4D6A-8110-7E0F8CF7F636}"
 EndProject
@@ -11,9 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Domain", "Kinvo.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinvo.Infra.Data", "Kinvo.Infra.Data\Kinvo.Infra.Data.csproj", "{2ED363F4-398D-4974-A5BD-A56B5F88DD24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Infra.IoC", "Kinvo.Infra.IoC\Kinvo.Infra.IoC.csproj", "{A556CD61-3BF1-45BD-889D-C42A3719A449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinvo.Infra.IoC", "Kinvo.Infra.IoC\Kinvo.Infra.IoC.csproj", "{A556CD61-3BF1-45BD-889D-C42A3719A449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinvo.Application", "Kinvo.Application\Kinvo.Application.csproj", "{9DEF0CB5-F5A4-4D51-95C4-28A6E0AB6761}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinvo.Application", "Kinvo.Application\Kinvo.Application.csproj", "{9DEF0CB5-F5A4-4D51-95C4-28A6E0AB6761}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{671A38DC-11AA-4774-A338-C3C9329B5F53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4501B7A0-6BD9-4FD1-A94F-810A242E58D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core Business", "Core Business", "{96E63731-24BF-4126-B8FC-938A9B3070FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDA414F5-920A-4D6A-8110-7E0F8CF7F636} = {671A38DC-11AA-4774-A338-C3C9329B5F53}
+		{B8AA79DF-E7C4-4B7A-97A6-5C94B3E6AA22} = {96E63731-24BF-4126-B8FC-938A9B3070FE}
+		{61506150-0EAE-4752-AF4C-68E3FFF16028} = {96E63731-24BF-4126-B8FC-938A9B3070FE}
+		{2ED363F4-398D-4974-A5BD-A56B5F88DD24} = {96E63731-24BF-4126-B8FC-938A9B3070FE}
+		{A556CD61-3BF1-45BD-889D-C42A3719A449} = {96E63731-24BF-4126-B8FC-938A9B3070FE}
+		{9DEF0CB5-F5A4-4D51-95C4-28A6E0AB6761} = {96E63731-24BF-4126-B8FC-938A9B3070FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE747ABD-D36D-43BA-8727-CE5843DA9EFB}
