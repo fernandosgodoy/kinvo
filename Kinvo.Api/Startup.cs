@@ -31,9 +31,11 @@ namespace Kinvo.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<ProdutoContext>(options =>
-                options.UseSqlServer("DefaultConnection"));
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddControllersWithViews();
+
+            services.AddDbContext<ProdutoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             InjectorDependencies.Register(services);
             services.AddAutoMapper(x => x.AddProfile(new MappingEntities()));
         }
