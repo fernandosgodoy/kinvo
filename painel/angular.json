@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "painel"
+  "defaultProject": "painel",
+  "cli": {
+    "analytics": "78900561-c1ce-4914-af4b-e20c705d25f0"
+  }
 }
