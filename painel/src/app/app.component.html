@@ -10,11 +10,11 @@
     </p>
     <div class="form-login">
       <form action="">
-        <input type="text" [(ngModel)]="login" class="control-frm" placeholder="Login" 
+        <input type="text" #email class="control-frm" placeholder="Login" 
           id="txtLogin" />
-        <input type="password" [(ngModel)]="senha" class="control-frm" 
+        <input type="password" #senha class="control-frm" 
           placeholder="Senha" id="txtSenha" />
-        <button type="button" class="btn" (click)="entrar(user)">
+        <button type="button" class="btn" (click)="entrar(email.value, senha.value)">
           Entrar
         </button>
       </form>
