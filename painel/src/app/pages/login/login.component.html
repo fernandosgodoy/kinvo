@@ -1,0 +1,24 @@
+<div class="login-container center-margin">
+    <div class="inside">
+      <img src="../assets/img/kinvo.png" 
+        alt="logo" class="img-logo">
+      <p>
+        <strong>Painel de Administração</strong>
+      </p>
+      <p>
+        Insira abaixo seus dados de acesso:
+      </p>
+      <div class="form-login">
+        <form action="">
+          <input type="text" #email class="control-frm" placeholder="Login" 
+            id="txtLogin" />
+          <input type="password" #senha class="control-frm" 
+            placeholder="Senha" id="txtSenha" />
+          <button type="button" class="btn" (click)="entrar(email.value, senha.value)">
+            Entrar
+          </button>
+        </form>
+      </div>
+    </div>
+    <a href="#">Esqueci minha senha</a>
+  </div>
