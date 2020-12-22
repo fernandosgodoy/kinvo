@@ -1,12 +1,21 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { Router } from '@angular/router';
+// import { auth } from 'firebase';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private angularFireAuth = AngularFireAuthModule) { }
+  private authState: any = null;
+
+  constructor(
+    private afu = AngularFireAuth,
+    private router = Router
+    ) { 
+    
+    }
 
   signIn(){
     
