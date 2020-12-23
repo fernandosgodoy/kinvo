@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row justify-content-center p-4">
+        <form (ngSubmit)="login()">
+            <div class="col-md-12">
+                <h3>Firebase Login</h3>
+            <div class="form-group p-2">
+                    <input type="email" name="login" class="form-control" 
+                        #ctrlName="ngModel" [(ngModel)]="email" placeholder="Informe seu e-mail" required/>
+                </div> 
+                <div class="form-group p-2">
+                    <input type="password" name="password" class="form-control" 
+                        #ctrlName="ngModel" [(ngModel)]="password" placeholder="Informe sua senha" required/>
+                </div> 
+                <div class="form-group p-2">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <div class="register">
+                        <a href="#" routerLink="/register">Registrar usuário</a>
+                    </div>
+                </div> 
+            </div>
+        </form>
+        <br>
+        <div class="row form-group">
+            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}
+            </p>
+    
+            <p *ngIf="error.message.length > 0" class="text-danger">
+                {{error.message}}
+            </p>
+        </div>
+    </div>
+</div>
+
