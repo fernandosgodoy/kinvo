@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "kinvo-app"
+  "defaultProject": "kinvo-app",
+  "cli": {
+    "analytics": "6babe7af-cb2b-4f7b-8d40-0682ef948529"
+  }
 }
