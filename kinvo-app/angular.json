@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "painel": {
+    "kinvo-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/painel",
+            "outputPath": "dist/kinvo-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -65,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "painel:build"
+            "browserTarget": "kinvo-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "painel:build:production"
+              "browserTarget": "kinvo-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "painel:build"
+            "browserTarget": "kinvo-app:build"
           }
         },
         "test": {
@@ -113,19 +114,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "painel:serve"
+            "devServerTarget": "kinvo-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "painel:serve:production"
+              "devServerTarget": "kinvo-app:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "painel",
+  "defaultProject": "kinvo-app",
   "cli": {
-    "analytics": "78900561-c1ce-4914-af4b-e20c705d25f0"
+    "analytics": "6babe7af-cb2b-4f7b-8d40-0682ef948529"
   }
 }

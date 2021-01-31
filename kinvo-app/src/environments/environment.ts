@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  //Firebase authinfo here....
   firebase: {
+<<<<<<< HEAD:painel/src/environments/environment.ts
     apiKey: "AIzaSyDCHJCEZAD1iWzqb7R4IdFmvYTcFHCZBmA",
     authDomain: "kinvo-demo.firebaseapp.com",
     projectId: "kinvo-demo",
@@ -13,6 +13,9 @@ export const environment = {
     messagingSenderId: "288688236911",
     appId: "1:288688236911:web:3c257a99d6cc801e1f609a"
 
+=======
+    
+>>>>>>> d82c0ebe0652897c8f4383cfed32fb8c90758976:kinvo-app/src/environments/environment.ts
   }
 };
 
